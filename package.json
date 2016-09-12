@@ -1,0 +1,8 @@
+{
+  "name": "cream-website",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ejs": "^2.4.2"
+  }
+}
