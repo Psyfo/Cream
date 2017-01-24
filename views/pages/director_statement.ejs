@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title><%= title %></title>
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+
+    <body class="black white-text">
+        <!-- HEADER -->
+        <% include ../partials/navbar %>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="section">
+                <h5 class="light">Director's Statement</h5>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <br>
+                        <img class="img_box" src="img/Palesa.jpg" alt="Palesa Lebona">
+                    </div>
+                    <div class="col s12 m6">
+                        <p class="light">
+                            Living in the digital world we are bombarded with images of what it means to be beautiful and accepted in society. This in some cultures is seen through the tone of one’s skin (i.e. being light or fairer skinned).
+                        </p>
+                        <p class="light">
+                            It  even translates across social class, where in some races the “fairer or lighter your skin is”, the more “worthy you are”.
+                        </p>
+                        <p class="light">
+                            From feeling ugly to thinking that I wasn’t smart enough based on being classified as dark within the Black, South African Community as a child, I too have and continue to struggle with this inferiority complex myself as so do many others across the world from different races and cultures.   Inspired by my own personal struggle as well as the story of my teacher’s grandfather who’s mother couldn’t accept him and truly show him love because  of his dark skin, I decided to write the ‘CREAM’.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER -->
+        <% include ../partials/footer %>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.carousel.carousel-slider').carousel({full_width: true});
+            });
+        </script>
+    </body>
+</html>

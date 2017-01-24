@@ -1,39 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <% include ../partials/head %>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Cream</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
-<body>
-
-    <!--========================================================
-                          HEADER
-=========================================================-->
-    <header id="header">
-        <% include ../partials/header %>
-    </header>
-
-    <!--========================================================
-                          CONTENT
-=========================================================-->
-    
+<body class="black">
+  <% include ../views/partials/navbar %>
 
 
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-darken-2">Cream</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Insert caption about movie here</h5>
+        </div>
 
-    
-<!--========================================================
-                          SCRIPTs
-=========================================================-->
-    <% include ../partials/scripts %>
-    <!--========================================================
-                          FOOTER
-=========================================================-->
-    <footer id="footer">
-        <% include ../partials/footer %>
-    </footer>
+        <br><br>
 
-    <script src="js/script.js"></script>
-</body>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/parallax_01.jpeg" alt="Unsplashed background img 1"></div>
+  </div>
 
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img class="img_box" src="img/director_statement.jpeg" alt="Director's Statement Picture">
+              <span class="card-title">Director's Statement</span>
+            </div>
+            <div class="card-content">
+              <p class="light">Living in the digital world we are bombarded with images of what it means to be beautiful and accepted in society. This in some cultures is seen through the tone of one's skin (i.e. being light or fair-skinned).</p>
+            </div>
+            <div class="card-action">
+              <a class="teal-text" href="/director_statement">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="img_box" src="img/plot.jpg" alt="Synopsis">
+              <span class="card-title">Synopsis</span>
+            </div>
+            <div class="card-content">
+              <p class="light">Our story takes place in 1968, Oakland, California during the formation of the Black Panthers Society.
+              <br>
+              <p class="light">A black consciousness militant movement which practiced self-defense for minority communities agains the US government, and whose aim was...</p>
+              <br>
+            </div>
+            <div class="card-action">
+              <a class="teal-text" href="/synopsis">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Insert Optional Caption Here</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/parallax_02.jpeg" alt="Tianna and Grandmother"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <p class="left-align light white-text summary large">Torn between seeking the love and affection of her Anglo-minded grandmother and her own personal identity, a 12 year old, dark-skinned girl must make a choice which affects the rest of her life.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Insert Optional Caption Here</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/parallax_03.jpeg" alt="Joy"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <% include ../views/partials/footer %>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>

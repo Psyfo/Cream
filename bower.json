@@ -1,0 +1,17 @@
+{
+  "name": "cream-website",
+  "description": "Palesa Lebona website for the short movie Cream",
+  "main": "app.js",
+  "authors": [
+    "Sipho <21422869@dut4life.ac.za>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Psyfo/Cream",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

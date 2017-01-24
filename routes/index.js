@@ -8,5 +8,15 @@ router.get('/', function(req, res){
     title: "Home"
   });
 });
+router.get('/director_statement', function(req, res){
+  res.render('./pages/director_statement', {
+    title: "Director's Statement"
+  });
+});
+router.get('/synopsis', function(req, res){
+  res.render('./pages/synopsis', {
+    title: "Plot Synopsis"
+  });
+});
 
 module.exports = router;
