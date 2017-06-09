@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-      <title><%= title %></title>
-      <!-- CSS  -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-      <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
-    </head>
 
-    <body class="black white-text">
-        <!-- HEADER -->
-        <% include ../partials/navbar %>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+</head>
+
+<body class="black white-text">
+    <!-- HEADER -->
+    <% include ../partials/navbar %>
 
 
         <!-- CONTENT -->
-        <div class="container">
-            <div class="section">
-                <h5 class="light">Plot Synopsis</h5>
-                <div class="row">
-                    <div class="col s12 center">
-                        <br>
-                        <img class="img_box" src="img/tianna_cream.jpeg" alt="Palesa Lebona">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <p class="light">
-                            Our story takes place in 1968, Oakland, CA during the formation of the Black Panthers Society.
-                        </p>
-                        <p class="light">
-                            A black consciousness militant movement which practiced self-defense for minority communities against the US government, and whose aim was to establish revolutionary socialism through mass organizing and community based programs. During this period, you have Tiana, a 12 year old, dark skinned African American girl striving to gain love and acceptance from her Anglo-thinking, Southern Born, very light skinned grandmother, Grandma Stevens who loathes her. Given the impression by Grandma Stevens that the resentment and hate stems from her dark skin, Tiana continues to use bleaching cream in an attempt to get to the right skin tone which will appease her Grandmother. Her world changes when she meets Joy and Sean who are affiliated with the Black Panther's Society. Painted as "armed and dangerous" by the police and initially seen negatively, these two arrive at Grandma Steven's house forcibly seeking refuge until the mayhem of riots brought on by the assassination of MLK blows over. Joy makes Tiana question her ideology of love and acceptance given to her by Grandma Stevens and introduces concepts of black pride and self-love. Torn between this newfound ideology, Tiana must make a choice as to whether or not she wishes to continue using the cream or remain the way she is .
-                        </p>
+        <main>
+            <div class="container">
+                <div class="section">
+                    <h5 class="light">Plot Synopsis</h5>
+                    <div class="row">
+                        <div class="col s6 l6">
+                            <br>
+                            <div class="slider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="<%= plot_pic1 %>" alt="Plot pic">
+                                        <div class="caption center-align">
+                                            <h3>Optional Tagline</h3>
+                                            <h5 class="light grey-text text-lighten-3"></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="<%= plot_pic2 %>" alt="Plot pic">
+                                        <div class="caption left-align">
+                                            <h3>Optional Tagline</h3>
+                                            <h5 class="light grey-text text-lighten-3"></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="<%= plot_pic3 %>" alt="Plot pic">
+                                        <div class="caption right-align">
+                                            <h3>Optional Tagline</h3>
+                                            <h5 class="light grey-text text-lighten-3"></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="<%= plot_pic4 %>" alt="Plot pic">
+                                        <div class="caption center-align">
+                                            <h3>Optional Tagline</h3>
+                                            <h5 class="light grey-text text-lighten-3"></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s6 l6">
+                            <p class="light">
+                                Our story takes place in 1968, Oakland, CA during the formation of the Black Panthers Society.
+                            </p>
+                            <p class="light">
+                                A black consciousness militant movement which practiced self-defense for minority communities against the US government, and whose aim was to establish revolutionary socialism through mass organizing and community based programs. During this period, you
+                                have Tiana, a 12 year old, dark skinned African American girl striving to gain love and acceptance from her Anglo-thinking, Southern Born, very light skinned grandmother, Grandma Stevens who loathes her. Given the impression
+                                by Grandma Stevens that the resentment and hate stems from her dark skin, Tiana continues to use bleaching cream in an attempt to get to the right skin tone which will appease her Grandmother. Her world changes when she
+                                meets Joy and Sean who are affiliated with the Black Panther's Society. Painted as "armed and dangerous" by the police and initially seen negatively, these two arrive at Grandma Steven's house forcibly seeking refuge until
+                                the mayhem of riots brought on by the assassination of MLK blows over. Joy makes Tiana question her ideology of love and acceptance given to her by Grandma Stevens and introduces concepts of black pride and self-love. Torn
+                                between this newfound ideology, Tiana must make a choice as to whether or not she wishes to continue using the cream or remain the way she is .
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr>
+        </main>
+
 
         <!-- FOOTER -->
         <% include ../partials/footer %>
 
-        <!-- SCRIPTS -->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.carousel.carousel-slider').carousel({full_width: true});
-            });
-        </script>
-    </body>
+            <!-- SCRIPTS -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.slider').slider();
+                });
+            </script>
+</body>
+
 </html>

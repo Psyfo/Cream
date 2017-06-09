@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/materialize', express.static(__dirname + '/node_modules/materialize-css/dist'));
 
 //Listen for requests
-app.listen(3000);
+app.listen(9000);
 console.log('Magic happens on port %d!', 9000);
 /*var server = app.listen(app.get('port'), function(){
   var port = server.address().port;

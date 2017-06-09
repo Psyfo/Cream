@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
 </head>
 <body class="black">
   <% include ../views/partials/navbar %>
@@ -54,7 +56,7 @@
         <div class="col s12 m6">
           <div class="card hoverable">
             <div class="card-image">
-              <img class="img_box" src="img/plot.jpg" alt="Synopsis">
+              <img class="img_box" src="<%= plot_pic1 %>" alt="Synopsis">
               <span class="card-title">Synopsis</span>
             </div>
             <div class="card-content">
@@ -114,8 +116,8 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="bower_components/materialize/dist/js/materialize.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.js"></script>-->
   <script src="js/init.js"></script>
 
   </body>

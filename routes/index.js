@@ -20,11 +20,17 @@ var grandma_pic = "/img/Bios/grandma.jpeg";
 var joy_pic = "/img/Bios/joy.jpeg";
 var tiana_pic = "/img/Bios/tiana.jpeg";
 var award_pic = "/img/award.jpg";
+var laurel_pic = "/img/Laurels/laurel.png";
+var plot_pic1 = "/img/plot1.jpeg";
+var plot_pic2 = "/img/plot2.jpg";
+var plot_pic3 = "/img/plot3.jpg";
+var plot_pic4 = "/img/plot4.jpeg";
 
 //Get home
 router.get('/', function(req, res){
   res.render('index', {
-    title: "Cream"
+    title: "Cream",
+    plot_pic1: plot_pic1
   });
 });
 router.get('/director_statement', function(req, res){
@@ -35,7 +41,11 @@ router.get('/director_statement', function(req, res){
 });
 router.get('/synopsis', function(req, res){
   res.render('./pages/synopsis', {
-    title: "Plot Synopsis"
+    title: "Plot Synopsis",
+    plot_pic1: plot_pic1,
+    plot_pic2: plot_pic2,
+    plot_pic3: plot_pic3,
+    plot_pic4: plot_pic4
   });
 });
 router.get('/cast_crew', function(req, res){
@@ -114,9 +124,16 @@ router.get('/bio_rodrigo', function(req, res){
 router.get('/press_awards', function(req, res){
   res.render('./pages/press_awards', {
     title: "Press & Awards",
-    award_pic: award_pic
+    award_pic: award_pic,
+    laurel_pic: laurel_pic
   });
 });
+router.get('/contact', function(req, res){
+  res.render('./pages/contact', {
+    title: "Contact"
+  });
+});
+
 
 
 
