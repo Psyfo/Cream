@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+</head>
+
+<body class="black white-text">
+    <!-- HEADER -->
+    <% include ../partials/navbar %>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="section">
+                <h5 class="light">Kacie Rogers</h5>
+                <div class="row">
+                    <div class="col s3 m3">
+                        <br>
+                        <img class="img_box" src="<%= kacie_pic %>" alt="Kacie Rogers">
+                    </div>
+                    <div class="col s6 m6">
+                        <p class="light">
+                            Native Houstonian, Kacie Rogers, is gaining her classical training at one of the top Hollywood acting schools, the American Musical and Dramatic Academy and Conservatory of the Performing Arts, completing their 2-year conservatory program in Acting for Stage, Film, and Television and will be graduating in February 2016. She kept her instincts sharp with training in improv from The Second City and received her introduction to the world of voiceover from the legendary Stu Levin. On stage, Kacie has taken on roles from William Inge to Ntozake Shange and on film, Kacie is best known for her leading role in the webseries PYT Series.  Looking to the future, Kacie is currently training & growing as an Artist and looking forward to landing a reoccurring role in next Emmy Nominated ABC series or appearing as Juliet in the next live action feature film of Shakespeare’s classic, Romeo + Juliet!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER -->
+        <% include ../partials/footer %>
+
+            <!-- SCRIPTS -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.carousel.carousel-slider').carousel({
+                        full_width: true
+                    });
+                });
+            </script>
+</body>
+
+</html>

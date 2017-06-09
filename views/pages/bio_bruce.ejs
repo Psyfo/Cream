@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+</head>
+
+<body class="black white-text">
+    <!-- HEADER -->
+    <% include ../partials/navbar %>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="section">
+                <h5 class="light">BRUCE LEMON JR</h5>
+                <div class="row">
+                    <div class="col s3 m3">
+                        <br>
+                        <img class="img_box" src="<%= bruce_pic %>" alt="Bruce Lemon Jr">
+                    </div>
+                    <div class="col s6 m6">
+                        <p class="light">
+                            Bruce Lemon JR  is a native of Watts, California with a Bachelor of Arts in Theatre Arts  from Hampton University and Master of Fine Arts in Acting from The New School for Drama.
+                        </p>
+                        <p class="light">
+                            Stemming from a background in theatre, he is currently is the Artistic Director of The Watts Village Theater Company  the 2014 Winner for Best Leading Actor in a Play (local) Award from BroadwayWorld LA for his role in FOLLOW.
+                        </p>
+                        <p class="light">
+                            He has also  been in other critically-acclaimed numerous plays which include:
+                        </p>
+                        <br>
+                        <p class="light">
+                            <ul class="browser-default">
+                                <li>THAIS (LA Opera)</li>
+                                <li>THE LIFE AND SORT OF DEATH OF ERIC ARGYLE (Son of Semele Ensemble.)</li>
+                                <li>ODESSA (The Illyrian Players. Pick of the Fringe. LA Weekly Pick.)</li>
+                                <li>SHE KILLS MONSTERS (The Flea Theatre. New York Times Critics Pick, 2 Drama Desk Nominations.)</li>
+                                <li>SUNJATA KAMALEYNA (McCarter Theater, tour.)</li>
+                                <li>RIOT/REBELLION (Watts Village Theater Co.)</li>
+                                <li>CONK & BONE (Mutineer Theater Co. Pasadena Playhouse.)</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER -->
+        <% include ../partials/footer %>
+
+            <!-- SCRIPTS -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.carousel.carousel-slider').carousel({
+                        full_width: true
+                    });
+                });
+            </script>
+</body>
+
+</html>

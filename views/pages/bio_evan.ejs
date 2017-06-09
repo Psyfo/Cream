@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+</head>
+
+<body class="black white-text">
+    <!-- HEADER -->
+    <% include ../partials/navbar %>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="section">
+                <h5 class="light">EVAN MICHAEL</h5>
+                <div class="row">
+                    <div class="col s3 m3">
+                        <br>
+                        <img class="img_box" src="<%= evan_pic %>" alt="Evan Michael">
+                    </div>
+                    <div class="col s6 m6">
+                        <p class="light">
+                            Evan Michael is an actor, writer, performer & Emmy-winning host who recently moved to Los Angeles after a 10-year career in broadcasting. He's currently the voice, puppeteer & actor behind the popular children's characters Daddy Pig, Mr. Bull & Danny Dog in the live musical stage version of the hit Nick, Jr. cartoon <em>Peppa Pig</em>, which goes back on tour in the Fall of 2016 after a successful 96-city, 108-show run this past Winter & Spring (<a href="www.peppapigliveus.com">www.peppapigliveus.com</a>). He grew up in the scenic Berkshires of western,Mass and in his time away from TV, film, commercial & VO projects, enjoys golfing, improve & stand –up comedy and binge-watching his DVR. He is also a Gemini & a pizza lover.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER -->
+        <% include ../partials/footer %>
+
+            <!-- SCRIPTS -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.carousel.carousel-slider').carousel({
+                        full_width: true
+                    });
+                });
+            </script>
+</body>
+
+</html>

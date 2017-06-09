@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+</head>
+
+<body class="black white-text">
+    <!-- HEADER -->
+    <% include ../partials/navbar %>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="section">
+                <h5 class="light">BOB STREIT</h5>
+                <div class="row">
+                    <div class="col s3 m3">
+                        <br>
+                        <img class="img_box" src="<%= bob_pic %>" alt="Bob Streit">
+                    </div>
+                    <div class="col s6 m6">
+                        <p class="light">
+                            Bob Streit is an L.A. based actor, screenwriter, filmmaker and musician with over 20 years of theater and film experience. Between 2007 and 2009, he wrote the screenplay for and co-starred in, <em>Under These Same Stars- the Céladon Affair</em>, an independent feature from Céladon Films, LLC. Streit contributed 3 songs to the filmʼs soundtrack and, as an Associate Producer on the project, he arranged broadcasts of the film on HECTV in St. Louis and on WSIU TV 8 and its affiliates across southern Illinois. In 2010 Mr. Streit narrated the award winning feature documentary, <em>Between Two Rivers</em>, from Wurstundgritz Films of Great Britain. Also in 2010 he made his directorial debut with Confidence Man- The Hugh DeNeal Story, a rockinʼ feature doc from Indigo Goat Productions, LLC. Confidence Man was featured at the 2011 St. Louis International Film Festival in a concert screening and was a Finalist in the Best Impact of Music in a Documentary category at the Park City Film Music Festival in 2012. Over the past 3 years, Mr. Streit has returned to acting in a big way playing leading roles in more than 15 dramatic and comedic shorts including: Chris the Bad Cop in <em>Nobodyʼs Hero</em> by Director, Mike Hulyk; the Producer in <em>The Hero Program</em> from Rich Johnson Media; The Vet in <em>Homeless</em> by David Martin; and Eb in <em>Perkinʼs Coal</em> by Writer and Director, Mike Kartje. His portrayal of a grieving widower in the film <em>So Far</em> earned him a Best Actor award at the 2013 Red Carpet event at Southern Illinois University. Streit is currently appearing in 2 short films - <em>Nuclear Family</em> and <em>Anatomy of a Murder</em> - which are in postproduction. Heʼs cast to play kidnapper, James Joy, in <em>Tea Time</em> for Neverland, and he's very excited to portray Officer John Hale in <em>Cream</em>, both of which shoot in the fall of 2015.
+                            <br>
+                            On the music front, Bob has a cd of original Americana, <em>For My Better Angels, Part 1</em>, available on CDbaby. And, he began recording its follow up, <em>FMBA, Part 2</em>, this past April at MisunderStudio in Murphysboro, Illinois. Part 2 has an anticipated release date of Christmas, 2015.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER -->
+        <% include ../partials/footer %>
+
+            <!-- SCRIPTS -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.carousel.carousel-slider').carousel({
+                        full_width: true
+                    });
+                });
+            </script>
+</body>
+
+</html>

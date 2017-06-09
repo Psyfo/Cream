@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+</head>
+
+<body class="black white-text">
+    <!-- HEADER -->
+    <% include ../partials/navbar %>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="section">
+                <h5 class="light">Jen H. Conrad</h5>
+                <div class="row">
+                    <div class="col s3 m3">
+                        <br>
+                        <img class="img_box" src="<%= jen_pic %>" alt="Jen H. Conrad">
+                    </div>
+                    <div class="col s6 m6">
+                        <p class="light">
+                            Jen felt honored to play the role of Grandma Stevens in the production of “ Cream”, a role that challenged the very core of he acting ability due to the bitter nature of this character. As a Bachelor of Fine Arts graduate of Virginia Commonwealth University, Jen’s career started at the Virginia Museum of Fine Arts, Discovery program for new talent. She is best known at VCU for her performance as Agave in the Greek classic “ The Bacchae”. She later move to Chicago, Illinois where she performed on stage in such productions as “84: for Collaboration and “pirate Bones” for Lincoln Square Theatre company. Here her talents were tested, as she played a 20-year old mentally challenged woman. The production received an extended run due to to popular demand and Jen received rave reviews for her performance created just for Jen entitled , “ The Right Combination:, As a resident of Los Angeles for the past five years Jen has done everything from Zap Commercials to the 2015 massive national Anti-Smoking Campaign launched by the FDA. Currently Jen Conrad is a season regular on the hit show “ Cheetah in August” on Amazon Prime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER -->
+        <% include ../partials/footer %>
+
+            <!-- SCRIPTS -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.carousel.carousel-slider').carousel({
+                        full_width: true
+                    });
+                });
+            </script>
+</body>
+
+</html>

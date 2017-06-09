@@ -12,8 +12,21 @@ nav ul a, nav .brand-logo {
     color: #dadada;
 }
 
+ul.browser-default {
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+ul.browser-default li {
+  list-style-type: initial;
+}
+
 p {
     line-height: 2rem;
+}
+
+.pageheight {
+  min-height: 900px;
 }
 
 .button-collapse {
@@ -67,4 +80,8 @@ footer.page-footer {
 
 .summary {
     font-size: 30/40px;
+}
+
+.tabs .indicator {
+    background-color: teal !important; 
 }

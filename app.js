@@ -6,7 +6,7 @@ var app = express();
 
 
 //Define the port to run on
-app.set('port', 3000);
+app.set('port', 9000);
 
 //Define the view engine to use
 app.set('views', __dirname + '/views');
@@ -23,7 +23,7 @@ app.use('/materialize', express.static(__dirname + '/node_modules/materialize-cs
 
 //Listen for requests
 app.listen(3000);
-console.log('Magic happens on port %d!', 3000);
+console.log('Magic happens on port %d!', 9000);
 /*var server = app.listen(app.get('port'), function(){
   var port = server.address().port;
   console.log('Magic happens on port ' + port);
