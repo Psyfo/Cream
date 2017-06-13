@@ -1,7 +1,8 @@
 var express = require('express'),
     path = require('path'),
     ejs = require('ejs'),
-    routes = require('./routes/index');
+    routes = require('./routes/index'),
+    vhost = require('vhost');
 var app = express();
 
 
