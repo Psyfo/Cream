@@ -25,6 +25,10 @@ var plot_pic1 = "/img/plot1.jpeg";
 var plot_pic2 = "/img/plot2.jpg";
 var plot_pic3 = "/img/plot3.jpg";
 var plot_pic4 = "/img/plot4.jpeg";
+var hale_pic = "/img/hale.jpg";
+var bloom_pic = "/img/bloom.jpg";
+var sean_pic = "/img/sean.jpeg";
+var watchdog_footer_pic = "/img/watchdog.png";
 
 //Get home
 router.get('/', function(req, res){
@@ -64,7 +68,10 @@ router.get('/cast_crew', function(req, res){
     rodrigo_pic: rodrigo_pic,
     grandma_pic: grandma_pic,
     joy_pic: joy_pic,
-    tiana_pic: tiana_pic
+    tiana_pic: tiana_pic,
+    sean_pic: sean_pic,
+    hale_pic: hale_pic,
+    bloom_pic: bloom_pic
   });
 });
 router.get('/bio_ayianna', function(req, res){
@@ -125,7 +132,8 @@ router.get('/press_awards', function(req, res){
   res.render('./pages/press_awards', {
     title: "Press & Awards",
     award_pic: award_pic,
-    laurel_pic: laurel_pic
+    laurel_pic: laurel_pic,
+    palesa_pic: palesa_pic
   });
 });
 router.get('/contact', function(req, res){
