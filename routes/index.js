@@ -27,7 +27,7 @@ var plot_pic3 = "/img/plot3.jpg";
 var plot_pic4 = "/img/plot4.jpeg";
 var hale_pic = "/img/hale.jpg";
 var bloom_pic = "/img/bloom.jpg";
-var sean_pic = "/img/sean.jpeg";
+var sean_pic = "/img/Sean.jpeg";
 
 var watchdog_footer_pic = "/img/watchdog.png";
 
